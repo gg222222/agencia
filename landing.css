@@ -1,1 +1,403 @@
-body{background-color:black}
+:root {
+   --red: #e51c2a;
+   --red-dark: #c91523;
+   --black: #171717;
+   --gray: #737373;
+   --light-gray: #f8f8f8;
+   --border: #e6e6e6;
+   --white: #ffffff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    color: var(--black)
+    background: var(--white)
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, 
+h2,
+h3, 
+{
+    font-family: Georgia, "Times New Roman", serif;
+}
+
+
+/*HEADER*/
+.site-header {
+    border-bottom: 1px solid #eeeeee;
+    background: rgba (255,255, 0.96);
+    backdrop-filter: blur (8px);
+}
+
+/*NAVBA*/
+.navbar {
+    min-height:72px;
+}
+
+.brand {
+   display: inline-flex;
+   align-items;  center;
+   gap: 9px;
+   color: var(--black);
+   font-family: Georgia, "Times New Roman", serif;
+   font-size: 1.45rem;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.brand:hover {
+    color: var (--black);
+}
+
+.brand-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    color: white;
+    background: var (--red);
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+}
+
+.nav-link {
+    color: #555 !important;
+    font-weight: 600;
+}
+
+.nav-link:hover {
+    color: var(--red) !important;
+}
+
+
+
+/*BOTON WHATSAPP*/
+.btn-whatsapp,
+.bton-primary-custom {
+    color:white;
+    background: var(--red);
+    border: 1px solid var (--red);
+    border-radius: 9px;
+    padding: 11px 22 px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.btn-whatsapp:hover,
+.btn-primary.custom:hover {
+    color:white;
+    background:var(--red-dark);
+    border-color: var(--red-dark);
+}
+
+
+
+
+
+/*INICIO/HERO*/
+.section-padding {
+    padding: 75px 0;
+}
+
+.hero {
+    padding-top:42px;
+}
+
+.eyebrow {
+    display: inline-block;
+    padding: 8px 15 px;
+    margin-bottom: 22px;
+    border: 1px solid var(--border);
+    border-radius: 30px;
+    color: #777;
+    background: #fafafa;
+    font-size: 0.9rem;
+    font-weight: 600
+}
+
+
+.hero h1 {
+    max-width: 1000px;
+    margin-bottom: 20px;
+    font-size: clamp(2.8rem, 6vw, 5rem);
+    line-height: 1.03;
+    letter-spacing: -2px;
+}
+
+
+.hero h1 span {
+    color: var(--red);
+}
+
+.hero-text {
+    max-width: 800px;
+    color: var(--gray);
+    font-size: 1.18 rem;
+    line-height: 1.6;
+}
+
+
+
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 27px;
+}
+
+
+.btn-outline-custom {
+    color: var (--black);
+    background: white;
+    border: 1px solid #dcdcdc;
+    border-radius: 9px;
+    padding: 11px 22px;
+    font-weight: 700;
+}
+
+.btn-outline-custom:hover {
+    color: var(--black);
+    border-color: var(--red);
+}
+
+
+
+.trust-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 28px 0 35px;
+    color: #777;
+    font-size: 0.92rem;
+}
+
+.trust-row span::first-letter {
+    color: var(--red);
+}
+
+
+
+
+/*IMAGENDELHERO*/
+
+.image-placeholder::after {
+    content:"";
+    position: absolute;
+    width: 180px;
+    height: 180px;
+    right: 8%;
+    bottom: -70px;
+    border-radius: 50%;
+    background; rgba (229,28, 48, .7);
+    filter: blur(10px);
+}
+
+
+.image-placeholder>div{
+    position: relative
+    z-index: 1;
+}
+
+.image-placeholder strong,
+.image-placeholder small; {
+    display: block;
+}
+
+.image-placeholder strong {
+    font-size: 1.4 rem;
+}
+
+
+
+.image-placeholder small {
+    margin-top; 6px;
+    opacity: .8;
+}
+
+
+
+.image-hero {
+    height: 380px;
+    margin-top: 40px;
+}
+
+
+
+/*Servicios*/
+.section-soft {
+    background: #fafafa;
+}
+
+
+.section-heading {
+    max-width; 800px;
+    margin: 0 auto 45px;
+    text-align: center; 
+}
+
+.section-heading h2,
+section > .container >h2,
+.contact-section h2 {
+    margin-bottom: 12px;
+    font-size: clamp(2.1rem, 4vw, 3.5rem);
+    line-height: 1.1;
+}
+
+
+
+.section-heading p, 
+.contact-section p {
+    color: var(--gray);
+    font-size: 1.05rem;
+    line-height: 1.6;
+}
+
+.visa.card {
+    height: 100%;
+    padding: 30px;
+    border: 1px solid var(--border);
+    background: white;
+    box-shadow: 0 5px 20px rgba (0, 0, 0, .03);
+}
+
+
+.visa-card:hover {
+    transform: translateY(-3px);
+    transition: .2s ease;
+    box-shadow: 0 12 px, 25px rgba (0, 0, 0, .07);
+}
+
+
+.card-icon {
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    width:52px;
+    height: 52px;
+    margin-bottom:25px;
+    border-radius: 12px;
+    color: var(--red);
+    background: #fdecef;
+    font-size: 1.5rem;
+}
+
+.visa.card h3 {
+    margin-bottom: 9px;
+    font-size: 1.6rem;
+}
+
+
+.visa-card p{
+    margin:0;
+    color: var(--gray);
+    line-height: 1.55;
+}
+
+
+/*Evaluacion*/
+.evaluation-form {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: white;
+    box-shadow: 0 8px 30px rgba (0, 0, 0, .06);
+}
+
+
+.evaluation-form label {
+    display: block;
+    margin-bottom: 7px;
+    font-weight: 700;
+}
+
+
+
+.evaluation-form input, 
+.evaluation-form select,
+.evaluation-form textarea {
+    width: 100px;
+    padding: 12px,14px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    outline: none;
+    background: white;
+    font: inherit;
+}
+
+
+.evaluation-form input:focus,
+.evaluation-form select:focus,
+.evaluation-form textarea:focus {
+    border-color: var(--red);
+    box-shadow: 0 0 0 3px rgba(229, 28,42, .08);
+}
+
+
+.submit-btn {
+    width: 100%;
+}
+
+.form-message {
+    display: none;
+    max-width: 760px;
+    margin: 18px auto 0;
+    padding: 14px 18px;
+    border-radius: 8px;
+    text-align: center;
+    background: #eaf8ef;
+    color: #166534;
+}
+
+
+.form-message.show {
+    display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
